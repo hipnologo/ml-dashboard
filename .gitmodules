@@ -1,0 +1,9 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/hipnologo/ml-dashboard-frontend.git
+[submodule "ml-dashboard-frontend"]
+	path = ml-dashboard-frontend
+	url = https://github.com/hipnologo/ml-dashboard-frontend.git
+[submodule "ml-dashboard-backend"]
+	path = ml-dashboard-backend
+	url = https://github.com/hipnologo/ml-dashboard-backend.git
