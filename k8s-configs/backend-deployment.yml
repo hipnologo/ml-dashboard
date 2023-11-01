@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-dashboard-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ml-dashboard-backend
+  template:
+    metadata:
+      labels:
+        app: ml-dashboard-backend
+    spec:
+      containers:
+      - name: ml-dashboard-backend
+        image: ml-dashboard-backend:latest
+        ports:
+        - containerPort: 8000

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-dashboard-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ml-dashboard-frontend
+  template:
+    metadata:
+      labels:
+        app: ml-dashboard-frontend
+    spec:
+      containers:
+      - name: ml-dashboard-frontend
+        image: ml-dashboard-frontend:latest
+        ports:
+        - containerPort: 3000

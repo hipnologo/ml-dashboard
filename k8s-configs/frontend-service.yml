@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ml-dashboard-backend
+  name: ml-dashboard-frontend
 spec:
   selector:
-    app: ml-dashboard-backend
+    app: ml-dashboard-frontend
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8000
+      targetPort: 3000
   type: LoadBalancer
